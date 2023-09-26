@@ -1,55 +1,48 @@
-rock = '''
-    _______
----'   ____)
-      (_____)
-      (_____)
-      (____)
----.__(___)
-'''
-
-paper = '''
-    _______
----'   ____)____
-          ______)
-          _______)
-         _______)
----.__________)
-'''
-
-scissors = '''
-    _______
----'   ____)____
-          ______)
-       __________)
-      (____)
----.__(___)
-'''
-
-#Write your code below this line 👇
-import random
-
-rps_list = [rock, paper, scissors]
-
-user_input = int(input("What do you choose ? Type 0 for Rock, 1 for Paper or 2 for Scissors"))
-if user_input >= 3 or user_input < 0:
-  print("You type wrong number, game over!")
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.")
+direction = input("You are at a cross road. Where you want to go ? Type 'left' or 'right' \n")
+if direction == "left":
+    sow = input("You've come to a lake. There is an island in the middle of the lake. Type wait to 'wait' for a boat. Type 'swim' to swim across.\n")
+    if sow == "wait":
+        door = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose?\n")
+        if door == "yellow":
+            print("You win!")
+        elif door == "red": 
+            print("Burned by fire. Game Over.")
+        elif door == "blue":
+            print("Eaten by beats. Game over.")
+        else:
+            door == "yellow" or door == "red" or door == "blue"
+            print("Game Over.")    
+    else:
+        print("Attacked by trout. Game over")
 else:
-  print(rps_list[user_input])
-  
-  random_computer = random.randint(0,2)
-  print("Computer choose")
-  print(rps_list[random_computer])
-  
-  if user_input == 0 and random_computer == 2:
-    print("You win")
-  elif random_computer == 0 and user_input == 2:
-    print("You lose")
-  elif random_computer > user_input:
-    print("You lose")
-  elif user_input > random_computer:
-    print("You win")
-  elif random_computer == user_input:
-    print("Draw")
-  
-
-
+    print("Fall into a hole. Game Over.")
+    
+    
+        
+        
+#ASCII Art
+    #https://ascii.co.uk/art
