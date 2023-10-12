@@ -52,7 +52,6 @@ output = print(f"There are {total_area} square feet in an acres")
 #Exercise 5 : Bottle Deposits
 
 #Compute the refund amount for a collection of bottles
-
 LESS_DEPOSITE = 0.10
 MORE_DEPOSITE = 0.25
 
@@ -84,7 +83,7 @@ Tip = 0.18
 
 #Tax calculation
 tax = meal_cost_conv * Tax
-Tip calculation
+#Tip calculation
 tip = meal_cost_conv * Tip
 
 #Total bill calculation (Tip, Tax and Food cost)
