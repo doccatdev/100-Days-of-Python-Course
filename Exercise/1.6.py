@@ -7,12 +7,12 @@ print("2500 National Institute Technology Bandung")
 print("4XXXX, Bandung")
 print("Indonesia")
 
-#Exercise 2 : Hello
+<h1>Exercise 2 : Hello<h1>
 
 name = input("What is your name ?")
 print (f"Hello {name}", "Good Morning")
 
-#Exercise 3 : Area of Room
+<h1>Exercise 3 : Area of Room<h1>
 
 #Give user input
 lenth = input ("Lenth of Room")
@@ -28,7 +28,7 @@ area = w_convert * l_convert
 #Display output
 print (f"{area}", "meters")
 
-#Exercise 4 : Area of a Field
+<h1>Exercise 4 : Area of a Field<h1>
 
 #Value that convert from square feet to acre
 SQFT_PER_ACRE = 43560
@@ -49,7 +49,7 @@ total_area = length_cov * width_cov / SQFT_PER_ACRE
 #Print the calculation result
 output = print(f"There are {total_area} square feet in an acres")
 
-#Exercise 5 : Bottle Deposits
+<h1>Exercise 5 : Bottle Deposits<h1>
 
 #Compute the refund amount for a collection of bottles
 LESS_DEPOSITE = 0.10
@@ -69,7 +69,7 @@ refund = LESS_DEPOSITE * less_int + MORE_DEPOSITE * more_int
 # Display output
 print("Your total refund will be $%.2f." % refund)
 
-#Exercise 6 : Tax & Tip
+<h1>Exercise 6 : Tax & Tip<h1>
 
 #User cost input
 meal_cost = input("Cost of a meal?" " " "Rp.")
@@ -97,7 +97,7 @@ output = "The tax is Rp.%.2f and the tip is Rp.%.2f, making the total Rp.%.2f" %
 #Display output
 print(output)
 
-#Exercise 7 : Sum of the first n Positive Integers
+<h1>Exercise 7 : Sum of the first n Positive Integers<h1>
 number = input("Give a number :")
 int_number = int(number)
 sum = (int_number) * (int_number + 1) / 2
