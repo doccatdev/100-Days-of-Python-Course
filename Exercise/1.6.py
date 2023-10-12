@@ -98,22 +98,38 @@ output = "The tax is Rp.%.2f and the tip is Rp.%.2f, making the total Rp.%.2f" %
 print(output)
 
 #Exercise 7 : Sum of the first n Positive Integers
+
+#User input
 number = input("Give a number :")
+
+#Type convertion from string to integer
 int_number = int(number)
+
+#Calculate with formula x = (n)( n + 1) / 2
 sum = (int_number) * (int_number + 1) / 2
 print("The sum of the first", int_number, "positive integer is", sum)
 
+#Exercise 8 : Widget and Gizmos 
+
+#Widget weight and gizmos weight in grams
 Widget_weighs = 75
 Gizmos_weighs = 112
 
+#User give 2 input, the split it
 a, b = input("Enter Widget & Gizmos weight value: ").split()
+
+#Display output value a and b. a = widget weight, b = gizmoz weight
 print("Your Widget Weight Value : ", a)
 print("Your Gizmoz Weight Value: ", b)
 
+#Type convertion from str to int
 a = int(a)
 b = int(b)
 
+#Calculate total weight (output in grams
 total_weighs = (75 * a) + (112 * b)
+
+#String formatting for display output
 output = (
     "The Widget weighs is .%.0f grams and the Gizmos weight is %.0f grams, making the total weight is %.0f grams"
     % (a, b, total_weighs)
