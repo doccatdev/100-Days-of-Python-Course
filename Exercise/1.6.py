@@ -102,3 +102,23 @@ number = input("Give a number :")
 int_number = int(number)
 sum = (int_number) * (int_number + 1) / 2
 print("The sum of the first", int_number, "positive integer is", sum)
+
+# Exercise 8 : Widget and Gizmos
+Widget_weighs = 75
+Gizmos_weighs = 112
+
+a, b = input("Enter Widget & Gizmos weight value: ").split()
+print("Enter Your First Name: ", a)
+print("Enter Your Last Name: ", b)
+
+a = int(a)
+b = int(b)
+
+total_weighs = (75 * a) + (112 * b)
+output = (
+    "The Widget weighs is .%.0f grams and the Gizmos weight is %.0f grams, making the total weight is %.0f grams"
+    % (a, b, total_weighs)
+)
+
+# Display output
+print(output)
