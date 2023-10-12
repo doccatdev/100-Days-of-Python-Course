@@ -103,13 +103,12 @@ int_number = int(number)
 sum = (int_number) * (int_number + 1) / 2
 print("The sum of the first", int_number, "positive integer is", sum)
 
-# Exercise 8 : Widget and Gizmos
 Widget_weighs = 75
 Gizmos_weighs = 112
 
 a, b = input("Enter Widget & Gizmos weight value: ").split()
-print("Enter Your First Name: ", a)
-print("Enter Your Last Name: ", b)
+print("Your Widget Weight Value : ", a)
+print("Your Gizmoz Weight Value: ", b)
 
 a = int(a)
 b = int(b)
@@ -122,3 +121,4 @@ output = (
 
 # Display output
 print(output)
+#
