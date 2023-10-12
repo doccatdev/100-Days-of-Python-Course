@@ -14,7 +14,7 @@ print (f"Hello {name}", "Good Morning")
 
 #Exercise 3 : Area of Room
 
-Give user input
+#Give user input
 lenth = input ("Lenth of Room")
 width = input("Width of Room")
 
@@ -25,7 +25,7 @@ w_convert = float(width)
 #Calculate area l * w
 area = w_convert * l_convert
 
-Display output
+#Display output
 print (f"{area}", "meters")
 
 #Exercise 4 : Area of a Field
@@ -72,7 +72,7 @@ print("Your total refund will be $%.2f." % refund)
 
 #Exercise 6 : Tax & Tip
 
-User cost input
+#User cost input
 meal_cost = input("Cost of a meal?" " " "Rp.")
 
 #Type convert
