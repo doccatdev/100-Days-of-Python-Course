@@ -147,7 +147,7 @@ print(output)
 x = input("Type first number  : ")
 y = input("Type second number : ")
 
-# # Type conversion
+# # Type conversion (str to int)
 x = int(x)
 y = int(y)
 
