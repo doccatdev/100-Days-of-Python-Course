@@ -1,53 +1,69 @@
-rock = '''
-    _______
----'   ____)
-      (_____)
-      (_____)
-      (____)
----.__(___)
-'''
+# Rock Paper Scissors ASCII Art
+print('Welcome to Rock Paper Scissors Game')
+print('What do you want to choise? Type 0 for Rock, 1 for Paper, 2 for Scissors')
+input_user = int(input('Your choise: '))
+if input_user < 0 or input_user > 2:
+    print('You chose an invalid option. Please try again!')
+    exit()
+user_name = input('Enter Your Name:')
 
-paper = '''
-    _______
----'   ____)____
-          ______)
-          _______)
-         _______)
----.__________)
-'''
 
-scissors = '''
-    _______
----'   ____)____
-          ______)
-       __________)
-      (____)
----.__(___)
-'''
+ascii_art = [
+    # Rock
+    """
+        _______
+    ---'   ____)
+          (_____)
+          (_____)
+          (____)
+    ---.__(___)
+    """,
+    
+    # Paper
+    """
+         _______
+    ---'    ____)____
+               ______)
+              _______)
+             _______)
+    ---.__________)
+    """,
+    
+    # Scissors
+    """
+        _______
+    ---'   ____)____
+              ______)
+           __________)
+          (____)
+    ---.__(___)
+    """
+]
 
-#Write your code below this line 👇
+
+if input_user == 0:
+    print(ascii_art[0])
+elif input_user == 1:
+    print(ascii_art[1])
+elif input_user == 2:
+    print(ascii_art[2])
+
 import random
+computer = random.randrange(0,2)
+print ('The Computer Choise is:')
+print(ascii_art[computer])
 
-rps_list = [rock, paper, scissors]
+if input_user == 0 and computer == 2:
+    print(f'{user_name} Win')
+elif computer == 0 and input_user == 2:
+    print(f'{user_name} Lose')
+elif computer > input_user:
+    print(f'{user_name} Lose')
+elif input_user > computer:
+    print(f'{user_name} Win')
+elif input_user == computer:
+    print('Draw')
 
-user_input = int(input("What do you choose ? Type 0 for Rock, 1 for Paper or 2 for Scissors"))
-if user_input >= 3 or user_input < 0:
-  print("You type wrong number, game over!")
-else:
-  print(rps_list[user_input])
-  
-  random_computer = random.randint(0,2)
-  print("Computer choose")
-  print(rps_list[random_computer])
-  
-  if user_input == 0 and random_computer == 2:
-    print("You win")
-  elif random_computer == 0 and user_input == 2:
-    print("You lose")
-  elif random_computer > user_input:
-    print("You lose")
-  elif user_input > random_computer:
-    print("You win")
-  elif random_computer == user_input:
-    print("Draw")
-  
+
+
+
