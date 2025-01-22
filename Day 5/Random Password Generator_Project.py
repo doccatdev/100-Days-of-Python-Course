@@ -23,9 +23,9 @@ print(f'Random Letters List generated: {i}')
 print(f'Random Symbols List generated: {x}')
 print(f'Random Numbers List generated: {y}')
 
-combine_of_list = ''.join(i) + ''.join(x) + ''.join(y)
-print('Easy Level Mode')
-print(f'Your Arranged (Order) Generated Password is: {combine_of_list}')
+combine_of_list_easy = ''.join(i) + ''.join(x) + ''.join(y)
+print(f'Your Easy Level Mode Password is: {combine_of_list_easy}')
+
 
 #Hard Level - Order of characters randomised:
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
@@ -48,8 +48,8 @@ random.shuffle(x)
 random.shuffle(y)
 
 #Join all list to generate new password
-combine_of_list = ''.join(i) + ''.join(x) + ''.join(y)
+combine_of_list_hard = ''.join(i) + ''.join(x) + ''.join(y)
 
 #Output
-print('Hard Level Mode')
-print(f'Your Randomized Generated Password is: {combine_of_list}')
+print(f'Your Hard Level Mode Password is: {combine_of_list_hard}')
+
