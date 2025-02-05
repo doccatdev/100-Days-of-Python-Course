@@ -8,7 +8,8 @@ end_of_game = False
 # Create a variable 'lives' to keep track of remaining lives.
 lives = 6
 print(logo)
-
+print('Welcome to Hangman Game (Indonesian Words)')
+print('******************************************************************************************************************')
 # Randomize the word list and choose a random word
 selected_words = random.choice(hangman_game.word_list)
 
