@@ -19,7 +19,7 @@ blank_letters = ["_"] * len(selected_words)  # This will generate a list of "_" 
 # Print the initial blank underscores (space-separated)
 print(" ".join(blank_letters))  # Joining the list with spaces for better display
 
-corrected_letters = []
+incorrected_letters = []
 
 while not end_of_game:
     if lives == 0:  # Stop the game if lives are 0
@@ -35,8 +35,8 @@ while not end_of_game:
             if selected_words[i] == guess:
                 blank_letters[i] = guess  # Update the blank_letters list with the correct guess
     else:
-        if guess not in corrected_letters:  # Ensure the incorrect letter is only counted once
-            corrected_letters.append(guess)
+        if guess not in incorrected_letters:  # Ensure the incorrect letter is only counted once
+            incorrected_letters.append(guess)
             lives -= 1
             print(f"Incorrect guess. You have {lives} lives left.")
             print(stages[lives])  # Display hangman based on lives
