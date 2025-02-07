@@ -1,1 +1,1 @@
-Rock, Scissor and Paper is a simple program to implement the Rock, Scissor and Paper (RPS) game. This program was created as part of learning the nested conditional statement (if, if else, elif) material in the Python programming language.
+Treasure Island is a simple program to implement nested if concept. This program was created as part of learning the nested conditional statement (if, if else, elif) material in the Python programming language.
