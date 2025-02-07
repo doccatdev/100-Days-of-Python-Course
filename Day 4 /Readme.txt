@@ -1,0 +1,1 @@
+Rock, Scissor and Paper is a simple program to implement the Rock, Scissor and Paper (RPS) game. This program was created as part of learning the conditional statement material (if, if else, elif) in the Python programming language.
