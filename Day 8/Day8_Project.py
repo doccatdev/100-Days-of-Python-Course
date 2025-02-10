@@ -23,6 +23,7 @@ def encryption(text, shift):
     return cipher_text
 
 def decrypt(cipher_text, shift):
+    "Fungsi untuk melakukan deskripsi cipher text"
     decrypt_text = ""
     
     for c in cipher_text:
