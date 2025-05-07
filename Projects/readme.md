@@ -1,1 +1,1 @@
-Collection of my all Project / Problem from various resource
+Collection of all solution Project. The idea of project is come from various resource
